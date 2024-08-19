@@ -282,6 +282,7 @@ nav .icon{
    }
 
    .signup{
+    position: relative; /*del*/
     width: 100%;
     height: 100%; 
     }
@@ -338,7 +339,7 @@ nav .icon{
     background: url('images/2.jpg') center no-repeat; 
     background-size: cover; 
     border-radius: 60% / 10%;
-    transform: translateY(-180px);
+    transform: translateY(-10px); 
     transition: .8s ease-in-out;
 }
 
@@ -573,6 +574,22 @@ figure {
 
 /*end painting*/
 
+/*start skectch*/
+#sketch {
+	font-family: 'Monserrat';
+    font-size: 25px;
+    line-height: 0.20; /* Adjust line spacing as needed */
+    color: rgb(242, 236, 212);
+    text-shadow: #fff;
+    background: #356b8b;
+    background-size: cover; /* Ensure the background image covers the entire section */
+    height: 380vh; /* Set the height of the section to fill the viewport height */
+    box-shadow: inset 0 -10px 30px 10px rgba(0, 0, 0, 0.5), inset 0 10px 30px 10px rgba(0, 0, 0, 0.5); /* Adds inner shadow to top and bottom */
+    padding-top: 90px; /* Adjust this value to lower the text */
+}
+
+/*end sketch*/
+
 
 /* Footer */
 footer {
@@ -581,7 +598,7 @@ footer {
     background-color: rgb(10, 7, 2);
     color: #fff;
     font-size: 14px;
-    margin-top: 200%;
+    margin-top: 500%;
 }
 
 

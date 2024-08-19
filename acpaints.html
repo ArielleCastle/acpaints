@@ -14,7 +14,6 @@
     <script src="acpaints.js"></script>
 
 </head>
-
 <body>
     <nav>
         <img class="logo" src="images/img3.png">
@@ -54,13 +53,16 @@
 
     <div class="mainbar">
         <input type="checkbox" id="chk" aria-hidden="true">
-    
+
+        <div class="card-body"> <!--del-->
+        <form action="connect.php" autocomplete="off" method="post">
+
         <div class="signup">
             <form>
                 <label for="chk" aria-hidden="true"> Sign up</label>
-                <input type="text" name="txt" placeholder="User name" required="">
-                <input type="email" name="email"  placeholder="Email"  required="">
-                <input type="Password" name="pswd" placeholder="Password" required="">       
+                <input type="text" name="username" id="username" placeholder="User name" autocomplete="false" required>
+                <input type="email" name="email" id="email"placeholder="Email" autocomplete="false" required>
+                <input type="Password" name="password" id="password" placeholder="Password" autocomplete="false" required>       
                 <button> Signup </button>
             </form>
         </div>
@@ -68,14 +70,15 @@
         <div class="login">
             <form>
                 <label for="chk" aria-hidden="true"> Login </label>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="Password" name="pswd" placeholder="Password" required="">
+                <input type="text" name="username" id="username" placeholder="User name" autocomplete="false" required>
+                <input type="Password" name="password" id="password" placeholder="Password" autocomplete="false" required>
                 <button> Login</button>
             </form>
         </div>
 
-    </div>    
+     </div>    
 </div> 
+</div> <!--del-->
 
 <!--end signup-->
 
@@ -210,7 +213,7 @@
         <div class="frame">
             <div class="border">
               <div class="image">
-                <img src="images/port8.jpg" height="275" width="auto" alt="" />
+                <img src="images/emily.jpg" height="275" width="auto" alt="" />
             </div><!--end image-->
               <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harvey</div>
             </div><!--end border-->
@@ -420,19 +423,14 @@
             </div>
           </figure>
 
- 
-
-          
-
 
     </div>
-  </div>
-    
+  </div>  
 
 
     <div id="sketch">
-        <h1>Sketch Section</h1>
-        <p>This is the sketch section.</p>
+        <h1>~ S k e t c h ~</h1>
+        <h6>"Sketches come to life"</h6>
     </div>
 
     <div id="artist">
